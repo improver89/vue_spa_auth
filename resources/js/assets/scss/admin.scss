@@ -1,0 +1,60 @@
+.brand-logo {
+  font-size: 22px;
+}
+.col {
+  margin-bottom: 20px;
+}
+textarea:not(.browser-default):focus:not([readonly]) {
+  &:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #4d5ff1;
+    box-shadow: 0 1px 0 #4c5edf;
+  }
+  &:not(.browser-default):focus:not([readonly]) + label {
+    color: #4d5ff1;
+  }
+}
+input[type="password"], input[type="text"] {
+  &:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #4d5ff1;
+    box-shadow: 0 1px 0 #4c5edf;
+  }
+  &:not(.browser-default):focus:not([readonly]) + label {
+    color: #4d5ff1;
+  }
+}
+[type="checkbox"]:checked + span:not(.lever):before {
+  border: 2px solid transparent;
+  border-right-color: #4d5ff1;
+  border-bottom-color: #4d5ff1;
+}
+.input-field {
+  margin: 0;
+}
+.card-content {
+  padding-bottom: 0;
+}
+textarea + label {
+  color: #333032;
+}
+input[type="checkbox"] + span {
+  color: #333032;
+}
+.main {
+  background-color: rgba(238, 238, 238, 0.9);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%;
+  overflow: hidden;
+}
+@media screen and (min-width: 550px) {
+  .main {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    width: 600px;
+  }
+}

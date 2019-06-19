@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #211d21;
+	color: #fff;
+}
+
+main {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.preloader-app {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 500;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.preloader-wrapper {
+		width: 200px;
+		height: 200px;
+		.circle-clipper .circle {
+			border-width: 14px;
+		}
+	}
+
+}
+
+.hidden-preloader {
+	animation: preload 1s forwards;
+}
+
+@keyframes preload {
+	0% {
+		opacity: 1;
+		z-index: 500;
+	}
+	60% {
+		opacity: 1;
+		z-index: 500;
+	}
+	90% {
+		opacity: 0;
+		z-index: 500;
+	}
+	100% {
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+.material-tooltip {
+	background-color: #555555;
+	padding: 5px 10px;
+	margin: 0;
+	line-height: 1.5;
+}
+
+.content-for-scroll {
+	width: 100%;
+	height: calc(100vh - 64px);
+	margin: 0;
+	padding: 0;
+}
+
+.__view {
+	min-height: calc(100% - 20px) !important;
+}
+
+.__bar-is-vertical {
+	background-color: rgba(16, 42, 171, 0.6) !important;
+	width: 10px !important;
+	right: -2px !important;
+}
+
+.__rail-is-vertical {
+	width: 10px !important;
+
+	&:hover {
+		.__bar-is-vertical {
+			opacity: 1 !important;
+		}
+	}
+
+}
+
+.__bar-is-horizontal {
+	background-color: rgba(16, 42, 171, 0.6) !important;
+}
+
+@media screen and (max-width: 600px) {
+	.content-for-scroll {
+		height: calc(100vh - 56px);
+	}
+	.__bar-is-vertical {
+		background-color: rgba(16, 42, 171, 0.6) !important;
+		width: 7px !important;
+		right: -5px !important;
+	}
+	.__rail-is-vertical {
+		width: 10px !important;
+	}
+}
+
+.navigations > li {
+	text-transform: uppercase;
+}
+
+.navigations {
+	transition: right 0.5s;
+}
+
+.nav-show {
+	right: -200%;
+	position: absolute;
+}
+
+.toast {
+	display: block;
+	top: 0;
+}
