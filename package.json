@@ -14,7 +14,7 @@
   "dependencies": {
     "@flussonic/flussonic-mse-player": "^19.2.8",
     "apexcharts": "^3.2.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "canvasjs": "^1.8.1",
     "cxlt-vue2-toastr": "^1.1.0",
     "echarts": "^4.1.0",
